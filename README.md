@@ -9,9 +9,9 @@ Dentro da pasta do gatk, foi criada a pasta "Desafio", na qual foram colocados o
 Nesta pasta também foi colocado o arquivo "pipeline.sh", descrito abaixo.
 
 ### OBTENÇÂO DAS VARIANTES ###
-Para obter as variantes, seguiu-se a pipeline de boas praticas do GATK, passando pelas seguintes etapas:
+Para obter as variantes, seguiu-se a pipeline de boas práticas do GATK, passando pelas seguintes etapas:
 -> Conversão dos dois arquivos com pares de leituras em um unico .bam
--> Mapear reads à referencia
+-> Mapear reads à referência
 -> Remover duplicatas de sequenciamento
 -> Recalibrar os scores de qualidade das leituras
 -> Realizar a chamada de variantes com HaplotypeCaller
@@ -22,5 +22,5 @@ Em todas as etapas foram usados os parametros padrao.
 Para reproduzir esta etapa, basta organizar os arquivos como descrito e executar o script "pipeline.sh".
 
 ### RESULTADO ###
-Há dois resultados possiveis: O arquivo "variantes .vcf" possui todas as variantes encontradas. O arquivo "variantes_filtradas.vcf" apresenta apenas as variantes que passaram na etapa de filtragem, como descrito na pipeline de boas praticas do GATK.
-A principio, o arquivo "variantes_filtradas.vcf" é o mais adequado para continuar as analises, mas como nao sei qual dos dois era esperado pelos(as) organizadores(as) dos desafio como resposta, forneço ambos os arquivos.
+Há dois resultados possiveis: O arquivo "variantes .vcf" possui todas as variantes encontradas. O arquivo "variantes_filtradas.vcf" apresenta apenas as variantes que passaram na etapa de filtragem, como descrito na pipeline de boas práticas do GATK.
+A princípio, o arquivo "variantes_filtradas.vcf" é o mais adequado para continuar as análises, mas como nao sei qual dos dois era esperado pelos(as) organizadores(as) dos desafio como resposta, forneço ambos os arquivos. Os dois contêm todas as sequências do gabarito.
