@@ -1,5 +1,5 @@
 #!/bin/sh
-# Script para executar a pipeline do primeiro dia do Desafio Mendelics
+# Script para executar a pipeline do primeiro dia do Desafio
 
 # Transformar os pares de reads em um unico arquivo .bam
 ../gatk FastqToSam -F1 amostra-lbb_R1.fq -F2 amostra-lbb_R2.fq -O unaligned_read_pairs.bam -SM AMOSTRA-LBB
