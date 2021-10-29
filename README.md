@@ -23,4 +23,4 @@ Para reproduzir esta etapa, basta organizar os arquivos como descrito e executar
 
 ### RESULTADO ###
 Há dois resultados possiveis: O arquivo "variantes .vcf" possui todas as variantes encontradas. O arquivo "variantes_filtradas.vcf" apresenta apenas as variantes que passaram na etapa de filtragem, como descrito na pipeline de boas práticas do GATK.
-A princípio, o arquivo "variantes_filtradas.vcf" é o mais adequado para continuar as análises, mas como nao sei qual dos dois era esperado pelos(as) organizadores(as) dos desafio como resposta, forneço ambos os arquivos. Os dois contêm todas as sequências do gabarito.
+A princípio, o arquivo "variantes_filtradas.vcf" é o mais adequado para continuar as análises, mas como nao sei qual dos dois era esperado pelos(as) organizadores(as) do desafio como resposta, forneço ambos os arquivos. Os dois contêm todas as sequências do gabarito.
