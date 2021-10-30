@@ -1,3 +1,6 @@
+### DISPOSIÇÂO DOS ARQUIVOS ###
+Todas as instruções executadas aqui assumem que os terminal está aberto na pasta específicada no README do Dia 1, com todos os arquivos fornecidos e criados neste dia, mais o arquivo BED fornecido, já descompactado.
+
 ### QUESTÂO 1 ###
 O método de filtragem de variantes escolhido foi o recomendado pela pipeline de boas práticas do GATK, que já foi executado no script do Dia 1, mas que reproduzo aqui para facilitar a avaliação:
 ```
@@ -37,5 +40,5 @@ nreads       | reads mapped (número de reads alinhadas, incluindo as com qualid
 proper_pairs | reads properly paired (reads alinhadas com código 0x2, ou seja, as duas reads do par foram alinhadas à referência, antiparalelas uma à outra, e a uma distância consistente)  
 mapQ_0       | reads MQ0 (reads que podem ser alinhadas a mais de uma posição na referência)
 ```
-Dos dados obtidos, constata-se que a vasta maioria das reads (99.8%) foi alinhada corretamente (proper_pairs), e apenas 4.8% apresentam ambiguidade (score 0).  
+Dos dados obtidos, constata-se que a vasta maioria das reads (99.8%) foi alinhada corretamente (proper_pairs), e 4.8% apresentam ambiguidade (score 0).  
 Como estamos lidando com leituras Illumina (short reads), a ocorrência de ambiguidades é esperada, e o número 4.8% não surpreende. Porém, dado que quase todas as leituras alinharam com código 0x2, é possível dizer que o alinhamento apresenta boa qualidade, e os dados estão adequados para prosseguir com a análise.
