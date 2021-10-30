@@ -1,5 +1,10 @@
 ### QUESTÂO 1 ###
-
+O método de filtragem de variantes escolhido foi o recomendado pepa pipeline de boas práticas do GATK, que já foi executado no script do Dia 1, mas que reproduzo aqui para facilitar a avaliação:
+```
+../gatk --java-options -Xmx6G CNNScoreVariants -R grch38.chr22.fasta -V variantes.vcf -O variantes_com_score.vcf
+../gatk --java-options -Xmx6G FilterVariantTranches -V variantes_com_score.vcf --resource 00-common_all_chr22_corrected.vcf --resource pequeno-gabarito.vcf --info-key CNN_1D -O variantes_filtradas.vcf
+```
+A ferramenta usa uma rede neural convolucional (já pré-treinada), que avalia a variante identificada e seu contexto (as bases em torno da variante), e atribui uma pontuação a ela. A ferramenta seguinte seleciona as variantes com base nesta pontuação. A escolha do limiar de filtragem envolve um balanço entre sensibilidade e especificidade, e os valores padrão foram escolhidos de modo a maximizar o equilíbrio entre eles (medido pelo score F1) para dados do genoma humano. Na falta de motivos para alterar estes valores, optei por utilizar a configuração padrão, obtendo o arquivo "variantes_filtradas.vcf".
 
 ### QUESTÂO 2 ###
 Para gerar o arquivo com as regiões não cobertas, foi utilizado o pacote bedtools, e executados os comando a seguir:
