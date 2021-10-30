@@ -16,7 +16,7 @@ bedtools intersect -a coverage.bed -b coverageZero.bed > regioes_nao_cobertas.be
 A primeira linha cria um arquivo BED contendo apenas as regiões com cobertura zero.  
 Entretanto, em um kit de exoma, esperamos sequenciar apenas as regiões codificantes, e o arquivo gerado inclui também as não-codificantes.  
 Para resolver este problema, executamos a segunda linha, que seleciona apenas as regiões com cobertura zero que intersectam com a região teoricamente sequenciada pelo kit de exoma.  
-Dessa forma geramos o resultado desejado: um arquivo BED que contém apenas as regiões que deveriam conter leituras, mas não apresentam nenhuma.  
+Dessa forma, foi obtido o resultado desejado: um arquivo BED que contém apenas as regiões que deveriam conter leituras, mas não apresentam nenhuma.  
   
 Para continuar a avaliação da cobertura, foi executada a instrução abaixo:
 ```
