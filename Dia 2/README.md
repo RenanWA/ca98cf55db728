@@ -23,7 +23,7 @@ Para continuar a avaliação da cobertura, foi executada a instrução abaixo:
 bedtools coverage -hist -a coverage.bed -b analysis_ready_reads.bam | grep ^all > bedstats.txt
 ```
 O arquivo gerado contém um histograma das coberturas presentes no alinhamento, cujo gráfico pode ser visto em "HistogramaCobertura.png".  
-Nele, percebemos que o nível de cobertura mais frequente é um pouco superior a 100, e a vasta maioria das bases apresenta cobertura superior a 30, o que é um limite razoável para afirmar se uma variante ocorre em homozigose ou heterozigose. Assim, podemos concluir que o alinhamento apresenta boa qualidade para a grande maioria das posições, contendo poucas regiões (relativamente) do exoma que não são cobertas por nenhuma leitura.
+Nele, percebemos que o nível de cobertura mais frequente é um pouco superior a 100, e a vasta maioria das bases apresenta cobertura superior a 30, o que é um limite razoável para afirmar se uma variante ocorre em homozigose ou heterozigose. Assim, pode-se concluir que o alinhamento apresenta boa qualidade para a grande maioria das posições, contendo poucas regiões (relativamente) do exoma que não são cobertas por nenhuma leitura.
 
 ### QUESTÂO 3 ###
 Para obter as informações sobre o alinhamento, foi utilizado o pacote samtools, com o seguine código:
