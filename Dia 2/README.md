@@ -1,5 +1,5 @@
 ### DISPOSIÇÂO DOS ARQUIVOS ###
-Todas as instruções executadas aqui assumem que os terminal está aberto na pasta específicada no README do Dia 1, com todos os arquivos fornecidos e criados neste dia, mais o arquivo BED fornecido, já descompactado.
+Todas as instruções executadas aqui assumem que o terminal está aberto na pasta específicada no README do Dia 1, com todos os arquivos fornecidos e criados neste dia, mais o arquivo BED fornecido, já descompactado.
 
 ### QUESTÂO 1 ###
 O método de filtragem de variantes escolhido foi o recomendado pela pipeline de boas práticas do GATK, que já foi executado no script do Dia 1, mas que reproduzo aqui para facilitar a avaliação:
