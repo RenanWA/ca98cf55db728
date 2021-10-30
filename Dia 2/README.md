@@ -1,5 +1,5 @@
 ### QUESTÂO 1 ###
-O método de filtragem de variantes escolhido foi o recomendado pepa pipeline de boas práticas do GATK, que já foi executado no script do Dia 1, mas que reproduzo aqui para facilitar a avaliação:
+O método de filtragem de variantes escolhido foi o recomendado pela pipeline de boas práticas do GATK, que já foi executado no script do Dia 1, mas que reproduzo aqui para facilitar a avaliação:
 ```
 ../gatk --java-options -Xmx6G CNNScoreVariants -R grch38.chr22.fasta -V variantes.vcf -O variantes_com_score.vcf
 ../gatk --java-options -Xmx6G FilterVariantTranches -V variantes_com_score.vcf --resource 00-common_all_chr22_corrected.vcf --resource pequeno-gabarito.vcf --info-key CNN_1D -O variantes_filtradas.vcf
