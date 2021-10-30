@@ -7,7 +7,7 @@ O método de filtragem de variantes escolhido foi o recomendado pela pipeline de
 A ferramenta usa uma rede neural convolucional (já pré-treinada), que avalia a variante identificada e seu contexto (as bases em torno da variante), e atribui uma pontuação a ela. A ferramenta seguinte seleciona as variantes com base nesta pontuação. A escolha do limiar de filtragem envolve um balanço entre sensibilidade e especificidade, e os valores padrão foram escolhidos de modo a maximizar o equilíbrio entre eles (medido pelo score F1) para dados do genoma humano. Na falta de motivos para alterar estes valores, optei por utilizar a configuração padrão, obtendo o arquivo "variantes_filtradas.vcf".
 
 ### QUESTÂO 2 ###
-Para gerar o arquivo com as regiões não cobertas, foi utilizado o pacote bedtools, e executados os comando a seguir:
+Para gerar o arquivo com as regiões não cobertas, foi utilizado o pacote bedtools, e executados os comandos a seguir:
 ```
 bedtools genomecov -ibam analysis_ready_reads.bam -bga | awk '$4==0' > coverageZero.bed
 bedtools intersect -a coverage.bed -b coverageZero.bed > regioes_nao_cobertas.bed
