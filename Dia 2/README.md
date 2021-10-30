@@ -10,9 +10,9 @@ O código é:
 
 ### QUESTÂO 3 ###
 Para obter as informações sobre o alinhamento, foi utilizado o pacote samtools, com o seguine código:
-'''
+```
 samtools stats -r grch38.chr22.fasta analysis_ready_reads.bam > samtools_stats.txt
-'''
+```
 A partir daí foram extraídos os parâmetros pedidos e colocados no arquivo TSV:
 Dado pedido  | campo no samtools_stats.txt
 nreads       | reads mapped (número de reads alinhadas, incluindo as com qualidade ruim)
