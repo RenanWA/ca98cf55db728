@@ -22,4 +22,4 @@ awk '$2>=16000000 && $2<=20000000' variantes_filtradas.vcf > variantes_regiao_it
 O arquivo "variantes_regiao_iteresse.vcf" possui 420 linhas, que é o número de variantes identificadas nesta região.
 
 ### ESTUDANDO O CONTEÚDO DO VCF ###
-# VARIANTE NÃO-SINÔNIMA #
+* **VARIANTE NÃO-SINÔNIMA**
