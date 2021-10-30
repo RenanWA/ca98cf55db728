@@ -14,7 +14,7 @@ NOVEL_TITV = 2,031963
 ```
 De acordo com o site do Broad Institute (https://gatk.broadinstitute.org/hc/en-us/articles/360035531572-Evaluating-the-quality-of-a-germline-short-variant-callset), para dados de sequenciamento de exoma, o valor esperado é entre 3.0 e 3.3. Como o valor obtido é menor, temos indícios da ocorrência de falsos positivos no VCF analisado.
 
-### NÚMERO DE VARINTES NA REGIÃO DE INTERESSE ###
+### NÚMERO DE VARIANTES NA REGIÃO DE INTERESSE ###
 Para encontrar o número de variantes presentes na região de interesse, entre as posições 16000000 e 20000000, simplesmente foram extraídas de "variantes_filtradas.vcf" as linhas cuja segunda coluna (posição da variante) se encontra entre estes valores:
 ```
 awk '$2>=16000000 && $2<=20000000' variantes_filtradas.vcf > variantes_regiao_iteresse.vcf
